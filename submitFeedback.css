@@ -1,0 +1,117 @@
+:root{
+    --Title: #e4e4e4;
+    --Placeholder-text:black;
+    --input-background:white;
+}
+
+.lightmode{
+    --Title: #000;
+    --Placeholder-text:black;
+    --input-background:#fff;
+    --SubmitType:#6366f1;
+    --SubmitBtn:#5816f1;
+    --SubmitBtnHover:#4b00fa;
+    --InputText:#000;
+}
+
+.darkmode{
+    --Title: #fff;
+    --Placeholder-text:red;
+    --input-background:#f0efef;
+    --SubmitType:#8b5cf6;
+    --SubmitBtn:#7a45f6;
+    --SubmitBtnHover:#7034fc;
+    --InputText:#000;
+}
+
+.feedback-container {
+    background-color: var(--navbar-color);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 0 20px;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 100px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.5s ease;
+}
+
+.feedback-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: var(--Title);
+}
+
+.feedback-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: var(--Title);
+}
+
+.feedback-form span {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--Title);
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    resize: none;
+    background-color: var(--input-background);
+    color: var(--InputText);
+}
+.feedback-form input ::placeholder,
+.feedback-form textarea ::placeholder{
+    color: var(--Placeholder-text);
+}
+
+.feedback-type {
+    display: flex;
+    gap: 10px;
+}
+
+.type-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ccc;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.type-btn.active {
+    background-color: var(--SubmitType);
+    color: white;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: var(--SubmitBtn);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--SubmitBtnHover);
+}

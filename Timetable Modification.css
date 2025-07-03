@@ -1,0 +1,252 @@
+
+:root{
+  --BorderColor:#000;
+}
+
+.lightmode{
+  --BorderColor:#000;
+  --UpdateBtn:#28b6ea;
+  --UpdateBtnHover:#2ebef3;
+  --RoomOptions:#3e41ee;
+  --RoomOptionsLine:#3e41ee;
+  --RoomOptionsHover:#3e41eeae;
+  --TimeSelectionText:#000;
+}
+
+.darkmode{
+  --BorderColor:#fff;
+  --UpdateBtn:#122fd3;
+  --UpdateBtnHover:#1432df;
+  --RoomOptions:#7037f7;
+  --RoomOptionsLine:#6f31ff;
+  --RoomOptionsHover:#6f31ffae;
+  --TimeSelectionText:#000;
+}
+
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 130px auto 40px;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navbar-color);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  color: var(--Text);
+  transition: all 0.3s ease;
+  position: fixed;
+  height: 80%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.right-column {
+    margin-left: 30px;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-row input {
+  flex: 1;
+  max-width: 80%;
+  height: 20px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--Text);
+  backdrop-filter: blur(6px);
+  font-size: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,1);
+  transition: background 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.edit-section {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding: 24px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  height: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.date-wrapper input {
+    pointer-events: none;
+}
+
+.edit-section label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.edit-section input[type="date"],
+.edit-section select {
+  width: 45%;
+  padding: 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 5px;
+  border: 1px solid var(--BorderColor);
+  color: var(--Text);
+}
+
+.edit-section select option{
+  color: var(--TimeSelectionText);
+}
+
+#roomSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.room-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 5px;
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.room-options button {
+  padding: 6px;
+  border-radius: 10px;
+  background: var(--RoomOptions);
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.5s ease;
+  color: var(--Text);
+}
+
+.room-options button:hover {
+  background-color: var(--RoomOptionsHover);
+  border: 1px solid var(--RoomOptionsLine);
+}
+
+.update-button {
+  align-self: center;
+  padding: 8px 18px;
+  background: var(--UpdateBtn);
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 15px;
+  color: var(--Text);
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.update-button:hover {
+  background: var(--UpdateBtnHover);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width:968px) {
+    .navbar a {
+      font-size: 12px;
+   }
+}
+
+@media screen and (max-width:600px){
+  .container {
+    margin: 125px auto 40px;
+    height: 85%;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .right-column {
+      margin-left: 0px;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .form-row label {
+    font-size: 12px;
+  }
+
+  .form-row input {
+    height: 12px;
+    font-size: 12px;
+  }
+
+  .edit-section {
+    margin-top: 12px;
+    gap: 10px;
+  }
+
+  .edit-section label {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .edit-section input[type="date"],
+  .edit-section select {
+    width: 45%;
+    padding: 0px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    height: 20px;
+  }
+
+}

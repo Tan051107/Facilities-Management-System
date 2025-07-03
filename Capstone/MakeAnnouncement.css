@@ -1,0 +1,120 @@
+:root{
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --input-bg: #ffffff;
+  --input-text: #000000;
+  --border-color: #ccc;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --widget-bg: rgba(0, 0, 0, 0.2);
+  --box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.lightmode{
+  --FormBG: rgba(255, 255, 255, 0.3); 
+  --box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  --ButtonColor:#007bff;
+  --ButtonHover:#006ee3;
+  --text-color: #000;
+  --input-bg: #fff;
+  --input-text: #000000;
+}
+
+.darkmode{
+  --FormBG: rgba(0, 0, 0, 0.2); 
+  --box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  --ButtonColor:#8b5cf6;
+  --ButtonHover:#7b46f9;
+  --text-color: #e0e0e0;
+  --input-bg: #e4e4e4;
+  --input-text: #000000;
+}
+
+.announcement-container {
+  margin-top: 100px; 
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  z-index: 1; 
+}
+
+.announcement-form {
+    background: var(--FormBG);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.announcement-form h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group #announcement-id{
+ color: #000;
+}
+
+.form-group label {
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--input-text);
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem auto 0;
+    padding: 0.8rem;
+    background: var(--ButtonColor);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--ButtonHover);
+}
+
+.date-wrapper input {
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .announcement-container {
+        width: 95%;
+        padding: 10px;
+        margin-top: 80px;
+    }
+    
+    .announcement-form {
+        padding: 1.5rem;
+    }
+}

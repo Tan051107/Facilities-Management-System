@@ -1,0 +1,176 @@
+
+.UserTimetable {
+  margin: 125px 75px;
+  width: 70%;
+}
+
+.FilterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.intakeCode {
+  width: 160px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+  background: rgba(129, 167, 255, 0.15);
+  color: var(--Text);
+  backdrop-filter: blur(10px);
+  outline: none;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  padding: 10px 38px;
+}
+
+.intakeCode h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.dropbtn {
+  font-size: 14px;
+  cursor: pointer;
+  height: 45px;
+  width: 200px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+  background: rgba(129, 167, 255, 0.15);
+  color: var(--Text);
+  backdrop-filter: blur(10px);
+  outline: none;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  padding: 10px 38px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  background: rgba(129, 167, 255, 0.1);
+  border-radius: 0px 0px 12px 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-content a {
+  color: var(--Text);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.show {
+  display: block;
+}
+
+.daySelector {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(84, 135, 255, 0.25), rgba(157, 199, 255, 0.25));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  color: var(--Text);
+}
+
+.daySelector div {
+  padding: 12px;
+}
+
+.daySelector div:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 1.5s ease;
+}
+
+.column {
+  flex: 1;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.column.selected-day {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.timetable-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.class-card {
+  padding: 14px 18px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.class-card h3 {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--Text);
+}
+
+.class-card .left {
+  margin: 4px 0;
+  flex: 2;
+  color: var(--Text);
+}
+
+.class-card .right {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  color: var(--Text);
+}
+
+.class-card .right i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: var(--Text);
+}
+
+
+@media screen and (max-width:968px) {
+    .navbar a {
+      font-size: 12px;
+   }
+}
+
+@media screen and (max-width:600px){
+  .class-card .right {
+    display: block;
+    gap: 100px;
+  }
+
+}
