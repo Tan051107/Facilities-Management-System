@@ -3,13 +3,13 @@
 Open a terminal and run the following command:
 
 ```bash
-git clone https://github.com/Tan051107/Mathematics-Quiz-Website.git
+git clone https://github.com/Tan051107/Facilities-Management-System.git
 ```
 
 ### 2. Navigate to the Project Directory
 
 ```bash
-cd Mathematics-Quiz-Website
+cd Facilities-Management-System
 ```
 
 ---
@@ -19,20 +19,20 @@ cd Mathematics-Quiz-Website
 
 1. **Create Database**
 
-   Open your MySQL client or phpMyAdmin and create a new database called `assignment`:
+   Open your MySQL client or phpMyAdmin and create a new database called `unisphere`:
 
    ```sql
-   CREATE DATABASE assignment;
+   CREATE DATABASE unisphere;
    ```
 
 2. **Import SQL File**
 
-   Import the provided `assignment.sql` file into the `assignment` database.
+   Import the provided `unisphere.sql` file into the `unisphere` database.
 
    - In **phpMyAdmin**:
-     - Select the `assignment` database.
+     - Select the `unisphere` database.
      - Go to the **Import** tab.
-     - Upload the `assignment.sql` file.
+     - Upload the `unisphere.sql` file.
      - Click **Go** to import.
 
 3. **Create Database Connection**
@@ -44,7 +44,7 @@ cd Mathematics-Quiz-Website
    $servername = "localhost";
    $username = "your_username"; // Replace with your MySQL username
    $password = "your_password"; // Replace with your MySQL password
-   $database = "assignment";    // Database name
+   $database = "unisphere";    // Database name
 
    $conn = new mysqli($servername, $username, $password, $database);
 
@@ -58,9 +58,7 @@ cd Mathematics-Quiz-Website
 
 ---
 
-### 4. Add Background Music
 
-- Add your preferred background music to the root folder and name it song.mp3 
 
 
 
